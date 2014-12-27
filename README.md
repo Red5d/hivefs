@@ -8,6 +8,7 @@ hivefs
 * requests
 * addict
 * fusepy
+
 (All are installable through pip)
 
 
@@ -19,10 +20,12 @@ hivefs
 
 Copying in or creating new files (uploading) is NOT working yet!
 The upload process for the Hive.im API is a bit complicated and I haven't gotten it working yet.
+
 If anyone out there knows how to do uploads via the Hive.im API using Python and the requests module (preferably), I'd be very interested to hear about it.
 
 ##Clarifications:
 * Watching videos: Right now, when accessing a video file from the hivefs filesystem, it direct-downloads it as needed just like other files. This is not too good though if you're trying to watch a full HD video over a slow connection. Eventually, the encoded video stream (when available) will be used instead of downloading the file.
+
 * More on file permissions: Hive.im only supports setting folders to "Locked" (private) or "Unlocked" (public), so the only supported permissions you can set from within this hivefs filesystem are 700 (Locked. Owner has full access, nobody else has any.) and 744 (Unlocked. Owner has full access, everyone else has read-only access).
 
 ##Usage:
