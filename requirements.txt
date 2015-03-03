@@ -1,0 +1,3 @@
+addict==0.2.7
+fusepy==2.0.2
+requests==2.5.3
